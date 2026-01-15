@@ -23,7 +23,8 @@ public class SistemaNotas {
         switch (opcao) {
 
             case 1:
-
+                // Cadastro de alunos
+                // Intencionalmente sem break para continuar no cadastro de notas
                 for (int i = 0; i < alunos.length; i++) {
                     System.out.println("Digite o nome do " + (i + 1) + " º aluno ");
                     alunos[i] = entrada.nextLine();

@@ -8,8 +8,6 @@ public class SistemaNotas {
         String[] alunos = new String[4];
         double[][] notas = new double[4][3];
 
-        int opcao = 0;
-
 
         System.out.println("--- MENU ---");
         System.out.println("--- ESCOLHA UMA DAS OPÇÕES ---");
@@ -18,7 +16,7 @@ public class SistemaNotas {
         System.out.println("2 - Cadastrar Apenas Lista de Notas");
         System.out.println("3 - Sair");
 
-        opcao = entrada.nextInt();
+        int opcao = entrada.nextInt();
         entrada.nextLine();
         switch (opcao) {
 
@@ -62,6 +60,11 @@ public class SistemaNotas {
 
             case 3:
                 break;
+
+            default:
+
+                System.out.println("Opção Inválida!");
+
                 }
 
                 entrada.close();
